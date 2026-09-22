@@ -235,8 +235,7 @@ a {
   top: -45px;
   right: -45px;
   position: absolute;
-    z-index: -5;
-
+  z-index: -5;
 }
 
 .featured-property:hover {
@@ -267,7 +266,7 @@ a {
 }
 .resource-buying:hover {
   border-color: #ddd6ff;
- 
+
   h5 {
     color: var(--light-purple);
   }
@@ -336,7 +335,6 @@ a {
   padding-right: 15px;
   font-size: 16px;
   position: relative;
- 
 }
 
 #navbar .nav-item::after {
@@ -388,7 +386,7 @@ a {
   .form-select {
     --bs-form-select-bg-img: unset;
   }
-  
+
   ::placeholder,
   .form-select {
     font-size: 14px;
@@ -798,6 +796,8 @@ a {
     h5 {
       font-size: 15px;
     }
+  }
+  #carousel {
     p,
     span {
       font-size: 14px;
@@ -807,36 +807,55 @@ a {
     font-size: 11px;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 990px) {
   .dropdown-menu {
     width: 100%;
     right: auto;
     transform: none;
 
-  padding: 10px;
-  max-height: 80vh;
-  overflow-y: auto;
-  h5{
-    font-size: 13px;
+    padding: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+    h5 {
+      font-size: 13px;
+    }
   }
-
-  }
-   #navbar .nav-item {
+  #navbar .nav-item {
     padding-right: 0;
     border-radius: 10px;
-
   }
   #navbar {
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
   }
-   #navbar .nav-item::after {
-   display: none;
+  #navbar .nav-item::after {
+    display: none;
   }
-  #navbar .nav-item:hover{
-    background-color:#F5F3FF ;
-    color: #7F22FE ;
+  #navbar .nav-item:hover {
+    background-color: #f5f3ff;
+    color: #7f22fe;
   }
+}
 
+@media screen and (max-width: 640px) {
+  #home {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  .title {
+    & span {
+      font-size: 18px;
+    }
+  }
+  #service .nav {
+    width: 100%;
+  }
+  .connect-us {
+    .social-icon {
+      width: 40px;
+        height: 40px;
+    }
+  }
 }
